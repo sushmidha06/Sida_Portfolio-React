@@ -140,6 +140,60 @@ body {
   }
   
   /* Scroll Down Indicator */
+  .services-carousel-section {
+    padding: 2rem;
+    background: #0d0d0d;
+    color: white;
+    text-align: center;
+  }
+  
+  .carousel-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #c084fc;
+  }
+  
+  .carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  
+  .service-card {
+    min-width: 250px;
+    padding: 1rem;
+    background: #1f1f1f;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+    background: #3f3f46;
+  }
+  
+  .icon-container {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #a78bfa;
+  }
+  
+  .scroll-btn {
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0 1rem;
+  }
   
   
   @keyframes bounce {

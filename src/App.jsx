@@ -8,7 +8,10 @@ import image2 from "./assets/5.png";
 import image3 from "./assets/6.png";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 import { motion } from "framer-motion";
+import ContactForm from "./ContactForm";
+
 import "./App.css";
+
 
 const services = [
   { title: "Web & App Development", desc: "We build high-performance, scalable websites and mobile applications using the latest technologies." , icon: <Laptop2 className="icon8" />,},
@@ -21,30 +24,30 @@ const services = [
 const cardsData = [
   {
     id: 1,
-    category: "AI/ML, FINTECH",
-    title: "Revolutionizing AI-Powered Fraud Detection Systems",
-    description: "Leveraging AI to detect and prevent fraudulent activities in real-time, ensuring secure and data-driven decision-making.",
+    category: "App Development",
+    title: "Study Sync",
+    description: "StudySync is a Flutter-based mobile app built for students and faculty of the College.",
     image: image1,
   },
   {
     id: 2,
-    category: "WEB DEVELOPMENT",
-    title: "Next-Gen Web Solutions for Scalable Business Growth",
-    description: "Using blockchain technology to create transparent and tamper-proof transaction records, reducing fraud risks.",
+    category: "App Development",
+    title: "HR Management Portal",
+    description: "It allows HR managers to post jobs, track applicants through different stages of the hiring pipeline, and manage resumes efficiently.",
     image: image2,
   },
   {
     id: 3,
-    category: "DATA VISUALIZATION",
-    title: "Smart Data Visualization for Real-time Decision Making",
-    description: "Harnessing big data analytics to detect unusual patterns and prevent fraudulent transactions in real-time.",
+    category: "App Development",
+    title: "Blood donation app",
+    description: "This Flutter-based app connects donors, hospitals, and NGOs to streamline the blood donation process.",
     image: image3,
   },
    {
-    id: 3,
-    category: "DATA VISUALIZATION",
-    title: "Smart Data Visualization for Real-time Decision Making",
-    description: "Harnessing big data analytics to detect unusual patterns and prevent fraudulent transactions in real-time.",
+    id: 4,
+    category: "App Development",
+    title: "TPMS Integrated App ",
+    description: "This project focuses on enhancing safety, efficiency, and cost reduction in the mining industry, particularly for dump trucks.",
     image: image3,
   },
 ];
@@ -67,6 +70,7 @@ const Card = ({ card }) => {
       </div>
     </div>
   );
+  
 };
 
 
@@ -432,7 +436,8 @@ const App = () => {
     </footer>
     
     </div>
+    
   );
 };
-
+export default App;
 
