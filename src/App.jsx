@@ -211,10 +211,27 @@ const App = () => {
             {content === "Meet the Leaders" && (
               <div className="leaders-container">
               <div className="leader-card">
-                <img src="sushmidha.jpg" alt="Sushmidha Mouraly" className="leader-photo" />
+                <img src="sara2.jpeg" alt="Sarathy" className="leader-photo" />
                 <div className="leader-info">
-                  <h4>Sushmidha</h4>
+                  <h4>Sarathy</h4>
                   <p>CEO</p>
+                </div>
+              </div>
+          
+              <div className="leader-card">
+                <img src="dhinesh.jpeg" alt="Dhinesh Gandhi" className="leader-photo" />
+                <div className="leader-info">
+                  <h4>Dhinesh Gandhi</h4>
+                  <p>COO</p>
+                </div>
+              </div>
+          
+              <div className="leader-card">
+                <img src="vaithy.jpg" alt="Vaitheeshvar Sathyaprakash" className="leader-photo" />
+                <div className="leader-info">
+                  <h4>Vaitheeshvar Sathyaprakash</h4>
+                  <p>CFO</p>
+                  <p></p>
                 </div>
               </div>
           
@@ -223,42 +240,25 @@ const App = () => {
                 <div className="leader-info">
                   <h4>Arjun Damodaran</h4>
                   <p>CTO</p>
-                </div>
-              </div>
-          
-              <div className="leader-card">
-                <img src="car.jpg" alt="Leader 3" className="leader-photo" />
-                <div className="leader-info">
-                  <h4></h4>
-                  <p></p>
                   <p></p>
                 </div>
               </div>
           
               <div className="leader-card">
-                <img src="car.jpg" alt="Leader 4" className="leader-photo" />
+                <img src="mordheesh.jpeg" alt="Mordheesh Balagourou" className="leader-photo" />
                 <div className="leader-info">
-                  <h4></h4>
-                  <p></p>
+                  <h4>Mordheesh Balagouro</h4>
+                  <p>CMO</p>
                   <p></p>
                 </div>
               </div>
           
               <div className="leader-card">
-                <img src="card7.jpg" alt="Leader 5" className="leader-photo" />
+                <img src="sushmidha.jpg" alt="Sushmidha Mouraly" className="leader-photo" />
                 <div className="leader-info">
-                  <h4></h4>
+                  <h4>Sushmidha Mouraly</h4>
+                  <p>CDO</p>
                   <p></p>
-                  <p>.</p>
-                </div>
-              </div>
-          
-              <div className="leader-card">
-                <img src="leader2.jpg" alt="Leader 6" className="leader-photo" />
-                <div className="leader-info">
-                  <h4></h4>
-                  <p></p>
-                  <p>.</p>
                 </div>
               </div>
             </div>
