@@ -211,11 +211,10 @@ const App = () => {
             {content === "Meet the Leaders" && (
               <div className="leaders-container">
               <div className="leader-card">
-                <img src="car.jpg" alt="Leader 1" className="leader-photo" />
+                <img src="sushmidha.jpg" alt="Sushmidha Mouraly" className="leader-photo" />
                 <div className="leader-info">
-                  <h4></h4>
-                  <p></p>
-                  <p></p>
+                  <h4>Sushmidha</h4>
+                  <p>CEO</p>
                 </div>
               </div>
           
