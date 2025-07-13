@@ -220,11 +220,10 @@ const App = () => {
               </div>
           
               <div className="leader-card">
-                <img src="ca.jpg" alt="Leader 2" className="leader-photo" />
+                <img src="arjun.jpg" alt="Arjun Damodaran" className="leader-photo" />
                 <div className="leader-info">
-                  <h4></h4>
-                  <p></p>
-                  <p></p>
+                  <h4>Arjun Damodaran</h4>
+                  <p>CTO</p>
                 </div>
               </div>
           
