@@ -245,7 +245,7 @@ const App = () => {
               </div>
           
               <div className="leader-card">
-                <img src="mordheesh.jpeg" alt="Mordheesh Balagourou" className="leader-photo" />
+                <img src="mordheesh.jpeg" alt="Mordheeshvara Balagourou" className="leader-photo" />
                 <div className="leader-info">
                   <h4>Mordheesh Balagouro</h4>
                   <p>CMO</p>
