@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6"; 
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Menu, X } from "lucide-react";
 import { FaLaptop } from "react-icons/fa"; 
 import { Laptop2, Bot, Brush, Database, Code2, Settings } from "lucide-react";// Import icons
 import image1 from "./assets/4.png";
@@ -77,6 +77,7 @@ const Card = ({ card }) => {
 
 const App = () => {
   const [content, setContent] = useState("Our Story");
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const whoWeAreRef = useRef(null);
   const whatWeOfferRef = useRef(null);
   const ourWorkRef = useRef(null);
@@ -85,26 +86,38 @@ const App = () => {
   const scrollToWhoWeAre = (e) => {
     e.preventDefault();
     whoWeAreRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+    setMobileNavOpen(false);
   };
 
   const scrollToWhatWeOffer = (e) => {
     e.preventDefault();
     whatWeOfferRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+    setMobileNavOpen(false);
   };
 
   const scrollToOurWork = (e) => {
     e.preventDefault();
     ourWorkRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+    setMobileNavOpen(false);
   };
   const scrollToSection = (ref) => (e) => {
     e.preventDefault();
     ref.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+    setMobileNavOpen(false);
   };
   const scrollToGetInTouch = (e) => {
     e.preventDefault();
     document.querySelector(".contact-section")?.scrollIntoView({ behavior: "smooth", block: "center" });
+    setMobileNavOpen(false);
   };
   
+  const toggleMobileNav = () => {
+    setMobileNavOpen(!mobileNavOpen);
+  };
+
+  const closeMobileNav = () => {
+    setMobileNavOpen(false);
+  };
 
   return (
     <div className="container">
@@ -117,7 +130,23 @@ const App = () => {
           <li><a href="#" onClick={scrollToOurWork}>Projects</a></li>
           <li><a href="#" onClick={scrollToSection(contactRef)}>Contact</a></li>
         </ul>
+        <button className="nav-btn" onClick={toggleMobileNav}>
+          <Menu size={24} />
+        </button>
       </nav>
+
+      {/* Mobile Navigation Overlay */}
+      <div className={`mobile-nav ${mobileNavOpen ? 'active' : ''}`}>
+        <button className="close-nav" onClick={closeMobileNav}>
+          <X size={24} />
+        </button>
+        <ul className="mobile-nav-links">
+          <li><a href="#" onClick={scrollToWhoWeAre}>About Us</a></li>
+          <li><a href="#" onClick={scrollToWhatWeOffer}>Services</a></li>
+          <li><a href="#" onClick={scrollToOurWork}>Projects</a></li>
+          <li><a href="#" onClick={scrollToSection(contactRef)}>Contact</a></li>
+        </ul>
+      </div>
 
       {/* Hero Section */}
       <header className="hero">
