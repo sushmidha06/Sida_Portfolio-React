@@ -227,9 +227,9 @@ const App = () => {
               </div>
           
               <div className="leader-card">
-                <img src="vaithy.jpeg" alt="Vaitheeshvar Sathyaprakash" className="leader-photo" />
+                <img src="vaithy.jpeg" alt="Sushmidha Mouraly" className="leader-photo" />
                 <div className="leader-info">
-                  <h4>Vaitheeshvar Sathyaprakash</h4>
+                  <h4>Sushmidha Mouraly</h4>
                   <p>CFO</p>
                   <p></p>
                 </div>
@@ -254,9 +254,9 @@ const App = () => {
               </div>
           
               <div className="leader-card">
-                <img src="sushmidha.jpg" alt="Sushmidha Mouraly" className="leader-photo" />
+                <img src="sushmidha.jpg" alt="Vaitheeshvar Satyaprakash" className="leader-photo" />
                 <div className="leader-info">
-                  <h4>Sushmidha Mouraly</h4>
+                  <h4>Vaitheeshvar Satyaprakash</h4>
                   <p>CDO</p>
                   <p></p>
                 </div>
